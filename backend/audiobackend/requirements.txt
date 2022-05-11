@@ -1,0 +1,8 @@
+django
+djangorestframework
+django-cors-headers
+librosa
+numpy
+scipy
+matplotlib
+SpeechRecognition

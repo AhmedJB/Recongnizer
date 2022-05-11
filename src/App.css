@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+.neum {
+    background: #1a1a1a;
+box-shadow:  6px 6px 12px #0a0a0a,
+             -6px -6px 12px #2a2a2a;
+}
+
+.inward-neum{
+    background: #1a1a1a;
+    box-shadow: inset 5px 5px 10px #0a0a0a,
+            inset -5px -5px 10px #2a2a2a;
+}
+
+.text-shad{
+    text-shadow: 0px 0px 20px #dfefca87;
+}
+
+.ispulsed{
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    animation: pulse 2s infinite;
+}
+
+.icon-container{
+    background-color:transparent;
+    height:80px;
+    width:80px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    margin-top:10px;
+    cursor: pointer;
+    transition:background-color .3s ease;
+}
+.icon-container:hover{
+    background-color: #DAA89B;
+}
+
+.active-container{
+    background-color:#DAA89B;
+    animation: pulse 2s infinite;
+}
+
+
+
+.icon-container svg{
+    color:rgb(182, 180, 180);
+    transition:color .3s ease;
+
+}
+
+
+
+.icon-container:hover svg,.active-container svg{
+    color:white !important;
+}
+
+
+
+
+
+@-webkit-keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 #DAA89B;
+        box-shadow: 0 0 0 0 #DAA89B;
+      }
+      70% {
+          -moz-box-shadow: 0 0 0 10px #daa89ba5;
+          box-shadow: 0 0 0 10px #daa89ba6;
+      }
+      100% {
+          -moz-box-shadow: 0 0 0 0 #daa89b69;
+          box-shadow: 0 0 0 0 #daa89b52;
+      }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 #DAA89B;
+      box-shadow: 0 0 0 0 #DAA89B;
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px #daa89ba5;
+        box-shadow: 0 0 0 10px #daa89ba6;
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 #daa89b69;
+        box-shadow: 0 0 0 0 #daa89b52;
+    }
+  }
